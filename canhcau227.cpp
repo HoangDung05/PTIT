@@ -3,68 +3,84 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+int n;
+vector<vector<int>> a;
+vector<pair<int, int>> dscanh;
+bool visited[105];
 
-int n, timer;
-vector<vector<int>> adj;
-vector<int> disc, low;
-vector<pair<int, int>> bridges;
+void DFS(int u)
+{
+    visited[u] = true;
+    for (int i = 1; i <= n; i++)
+        if (a[u][i] && !visited[i])
+            DFS(i);
+}
 
-void dfs(int u, int parent = -1) {
-    disc[u] = low[u] = ++timer;
-    for (int v = 0; v < n; ++v) {
-        if (adj[u][v]) {
-            if (v == parent) continue; // Bỏ qua cạnh về cha
-            if (disc[v] == 0) { // Đỉnh chưa thăm
-                dfs(v, u);
-                low[u] = min(low[u], low[v]);
-                if (low[v] > disc[u]) {
-                    // Tìm thấy cạnh cầu
-                    bridges.push_back({min(u, v), max(u, v)});
-                }
-            } else {
-                low[u] = min(low[u], disc[v]);
-            }
-        }
+void DFS2(int u, int s, int t)
+{
+    visited[u] = true;
+    for (int i = 1; i <= n; i++)
+    {
+        if ((u == s && i == t) || (u == t && i == s))
+            continue;
+        if (a[u][i] && !visited[i])
+            DFS2(i, s, t);
     }
 }
 
-void findBridges() {
-    timer = 0;
-    disc.assign(n, 0);
-    low.assign(n, 0);
-    bridges.clear();
-    
-    for (int i = 0; i < n; ++i) {
-        if (disc[i] == 0) {
-            dfs(i);
-        }
-    }
-    
-    // Sắp xếp theo thứ tự từ điển
-    sort(bridges.begin(), bridges.end());
-}
-
-int main() {
+int main()
+{
     ifstream inFile("TK.INP");
     ofstream outFile("TK.OUT");
-    
     inFile >> n;
-    adj.resize(n, vector<int>(n));
-    
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            inFile >> adj[i][j];
+    a.resize(n+1, vector<int>(n+1));
+    for (int i = 1; i <= n; i++)
+        for (int j = 1; j <= n; j++)
+            inFile >> a[i][j];
+
+    for (int i = 1; i <= n; i++)
+        for (int j = i + 1; j <= n; j++)
+        {
+            if (a[i][j])
+            {
+                dscanh.push_back({i, j});
+            }
+        }
+    memset(visited, false, sizeof(visited));
+    int lienthong_real = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if (!visited[i])
+        {
+            DFS(i);
+            lienthong_real++;
         }
     }
-    
-    findBridges();
-    
-    outFile << bridges.size() << endl;
-    for (auto& bridge : bridges) {
-        outFile << bridge.first + 1 << " " << bridge.second + 1 << endl;
+
+    int canhcau = 0;
+    vector<pair<int, int>> ds_canhcau;
+
+    for (auto c: dscanh)
+    {
+        int x = c.first, y = c.second;
+        memset(visited, false, sizeof(visited));
+        int lienthong_fake = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            if (!visited[i])
+            {
+                DFS2(i, x, y);
+                lienthong_fake++;
+            }
+        }
+        if (lienthong_fake > lienthong_real)
+        {
+            canhcau++;
+            ds_canhcau.push_back({x,y});
+        }
     }
-    
-    inFile.close();
-    outFile.close();
+    outFile << canhcau << endl;
+    for (auto c: ds_canhcau)
+        outFile << c.first << " " << c.second << endl;
     return 0;
 }
