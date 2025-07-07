@@ -1,0 +1,1 @@
+{"name":"Local: tonggan0nhat","url":"d:\\Coding\\data structure & algorithm\\code_ptit\\tonggan0nhat.cpp","tests":[{"id":1739980984049,"input":"2\n3\n-8 -66 -60\n6\n-21 -67 -37 -18 4 -65  ","output":"-68\n-14"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\data structure & algorithm\\code_ptit\\tonggan0nhat.cpp","group":"local","local":true}

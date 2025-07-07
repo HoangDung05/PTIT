@@ -1,0 +1,50 @@
+B100
+Hoang Dung
+3.2
+300
+20
+B101
+Tra My
+3
+200
+10
+B102
+Ho Manh
+2
+44
+3
+B103
+Bui Dat
+3.5
+200
+30
+B104
+Mai Anh
+5
+200
+10
+B105
+Bao Ngoc
+40
+3
+10
+B106
+Nhan Hoang
+3
+2
+100
+B107
+Hang Trinh
+5
+40
+200
+B108
+Le Bao
+2.1
+222
+100
+B109
+Bac Son
+3
+40
+30
