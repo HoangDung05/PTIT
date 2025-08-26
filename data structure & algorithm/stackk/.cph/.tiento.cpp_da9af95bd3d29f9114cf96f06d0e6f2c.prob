@@ -1,1 +1,0 @@
-{"name":"Local: tiento","url":"d:\\Coding\\data structure & algorithm\\stackk\\tiento.cpp","tests":[{"id":1747392638521,"input":"3\n7\n- + 2 * 3 1 9\n7\n- + 8 * 7 5 9\n3\n+ -10 -4","output":"-4\n34\n-14"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\data structure & algorithm\\stackk\\tiento.cpp","group":"local","local":true}

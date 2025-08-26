@@ -1,1 +1,0 @@
-{"name":"Local: phantulonnhat","url":"d:\\Coding\\data structure & algorithm\\code_ptit\\phantulonnhat.cpp","tests":[{"id":1738835659935,"input":"2\n5 3\n10 7 9 12 6\n6 2\n9 7 12 8 6 5","output":"12 10 9\n12 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\data structure & algorithm\\code_ptit\\phantulonnhat.cpp","group":"local","local":true}

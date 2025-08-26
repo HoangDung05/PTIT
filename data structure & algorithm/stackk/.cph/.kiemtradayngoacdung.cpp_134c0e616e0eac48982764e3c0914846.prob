@@ -1,1 +1,0 @@
-{"name":"Local: kiemtradayngoacdung","url":"d:\\Coding\\data structure & algorithm\\stackk\\kiemtradayngoacdung.cpp","tests":[{"id":1747382199368,"input":"2\n[()]{}{[()()]()}\n[(])","output":"YES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\data structure & algorithm\\stackk\\kiemtradayngoacdung.cpp","group":"local","local":true}

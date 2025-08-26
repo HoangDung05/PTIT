@@ -1,0 +1,1 @@
+{"name":"Local: codePtit","url":"d:\\Coding\\oop\\codePtit.java","tests":[{"id":1755038979526,"input":"3\n12\n100\n1212\n8888\n121212121212121212\n45678978","output":"0\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\oop\\codePtit.java","group":"local","local":true}

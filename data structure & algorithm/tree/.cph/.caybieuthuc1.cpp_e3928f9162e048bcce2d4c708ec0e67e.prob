@@ -1,1 +1,0 @@
-{"name":"Local: caybieuthuc1","url":"d:\\Coding\\data structure & algorithm\\tree\\caybieuthuc1.cpp","tests":[{"id":1747912672413,"input":"2\nab+ef*g*-\nwlrb+-*","output":"a + b - e * f * g\nw * l - r + b"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\data structure & algorithm\\tree\\caybieuthuc1.cpp","group":"local","local":true}

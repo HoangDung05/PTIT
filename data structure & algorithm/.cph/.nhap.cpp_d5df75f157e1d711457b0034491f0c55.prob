@@ -1,1 +1,0 @@
-{"name":"Local: nhap","url":"d:\\Coding\\data structure & algorithm\\nhap.cpp","tests":[{"id":1749146052136,"input":"5\n0 1 0 0 0\n1 0 1 0 0\n0 1 0 1 1\n0 0 1 0 1\n0 0 1 1 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\data structure & algorithm\\nhap.cpp","group":"local","local":true}
