@@ -42,4 +42,3 @@ for _ in range(int(input())):
             print(n)
             break
         n += 1
-    print(n)

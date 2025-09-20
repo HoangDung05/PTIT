@@ -1,5 +1,9 @@
-s = "hello my name is Dung how are you"
-my_list = s.split()
-for x in range(ord("A"), ord("z")):
-    if my_list.count(chr(x)) > 0:
-        print(f"{chr(x)} {my_list.count(chr(x))}")
+a, b = map(int, input().split())
+if a == 0 :
+    if b != 0:
+        print("VN")
+    else:
+        print("VSN")
+else:
+    result = b * (-1) / a
+    print(f"{result:.2f}")

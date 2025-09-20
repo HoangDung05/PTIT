@@ -1,0 +1,1 @@
+{"name":"Local: bai4","url":"d:\\Coding\\hdt_icpc\\bai4.cpp","tests":[{"id":1757207792958,"input":"4 \naaaa","output":"6"},{"id":1757207811151,"input":"2\nab","output":"0"},{"id":1757218003363,"input":"7\nabbbcca","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\hdt_icpc\\bai4.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: bai3","url":"d:\\Coding\\hdt_icpc\\bai3.cpp","tests":[{"id":1757211456039,"input":"3\n5 1 2","output":"8"},{"id":1757211815359,"input":"5\n1 2 3 4 5","output":"20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\hdt_icpc\\bai3.cpp","group":"local","local":true}
