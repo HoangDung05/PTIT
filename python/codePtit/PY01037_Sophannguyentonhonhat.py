@@ -2,11 +2,9 @@ import math
 
 arr = [0] * 10000001 # arr[k] luu so uoc tinh tu 1 -> k
 def isPrime(x):
-    if x < 2:
-        return False
+    if x < 2: return False
     for i in range(2, int(math.sqrt(x)) + 1):
-        if x % i == 0:
-            return False
+        if x % i == 0: return False
     return True
 
 def cntDivisor(x):
@@ -15,17 +13,15 @@ def cntDivisor(x):
     if isPrime(x):
         return 2
     cnt = 1
-    temp = x
     for i in range(2, int(math.sqrt(x)) + 1):
-        if temp % i == 0:
-            power = 0
-            while temp % i == 0:
-                power += 1
-                temp //= i
-            cnt *= (power + 1)
-    if temp > 1:
+        power = 0
+        while x % i == 0:
+            power += 1
+            x //= i
+        cnt *= (power + 1)
+    if x > 1:
         cnt *= 2
-    return  cnt
+    return cnt
 def init():
     arr[1] = 1
     for i in range(2, 10000001):
@@ -42,3 +38,4 @@ for _ in range(int(input())):
             print(n)
             break
         n += 1
+    print(n)
